@@ -1,0 +1,22 @@
+La visibilidad de los repositorios en GitHub sirve para controlar quién tiene acceso a ellos.
+
+Los repositorios públicos permiten que cualquier persona en internet los acceda, mientras que 
+los repositorios privados solo pueden ser accedidos por el dueño del repositorio y las personas 
+que se agregan como colaboradoras del proyecto.
+
+Si no sabes qué es un colaborador en un proyecto, no te preocupes. Te mostraremos cómo funciona 
+esto en GitHub más adelante.
+
+En las cuentas gratuitas de GitHub existe una condición para el uso de repositorios privados: 
+la cantidad de personas colaboradoras en cada proyecto está limitada a tres. Para incluir más 
+personas en repositorios privados, es necesario utilizar un plan pago o mantener la visibilidad 
+como pública.
+
+Si quieres profundizar más en el tema, te dejamos como recomendación la lectura de las siguientes 
+documentaciones:
+
+Sobre repositorios - GitHub Docs--------
+https://docs.github.com/es/repositories/creating-and-managing-repositories/about-repositories
+
+Definir la visibilidad del repositorio - GitHub Docs-------
+https://docs.github.com/es/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility

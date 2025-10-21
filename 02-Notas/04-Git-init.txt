@@ -1,0 +1,34 @@
+El comando git init debe usarse para convertir un directorio existente en la computadora, 
+que generalmente es el directorio de algún proyecto, en un repositorio Git. Sin embargo, 
+su uso requiere atención y cuidado para evitar problemas no deseados. Vamos a entender mejor 
+qué hace el comando git init.
+
+¿Qué es el comando git init?
+Para que podamos realizar el control de versiones de un proyecto, registrando los cambios 
+realizados en él a lo largo del tiempo, debemos, en primer lugar, transformar el directorio 
+del proyecto en un repositorio Git. El comando git init se utiliza para este objetivo, y debe 
+ejecutarse solo una vez. Cuando se ejecuta, configura el directorio actual para que sea rastreado 
+por Git, inicializando un repositorio vacío.
+
+
+Cuidados con el comando git init
+Aprendimos que el comando git init sirve para crear un nuevo repositorio Git y por eso debe 
+ejecutarse solo una única vez. Es decir, si un directorio ya es un repositorio Git, no tiene 
+sentido ejecutar nuevamente el comando git init. Este es un error bastante común.
+Si ejecutas el comando git init en un directorio que ya fue inicializado como un repositorio 
+Git, se mostrará el siguiente mensaje:
+
+
+Reinicializado el repositorio Git existente en /Users/leonardo/proyectos/Alura/Cursos/2213 - Git y Github/mi-proyecto/.git/ 
+
+
+Esto indica que Git reinicializó un repositorio ya existente, es decir, el comando git init se ejecutó en un directorio que ya era un repositorio Git.
+
+Si cometiste este error, no necesitas preocuparte, ya que todo el historial de cambios y commits 
+en el proyecto no se borrará. Git detecta que el directorio ya era un repositorio Git y, por lo 
+tanto, el comando no tiene ningún efecto.
+
+En caso de duda, antes de ejecutar el comando git init, ejecuta primero el comando git status. Si 
+aparece el mensaje fatal: not a git repository (or any of the parent directories): .git, esto 
+significa que el directorio actual no es un repositorio Git y entonces puedes ejecutar el comando 
+git init.
