@@ -1,10 +1,26 @@
-Usamos esto para iniciar un repositorio git----
-Git init
+* git init: Usamos esto para iniciar un repositorio git
 
 Los archivos sale con una U que significa Untracked que significa que no esta siendo 
 referenciado por git o mas bien es nuevo pero todavia no se le agrega git add.
 
-Usamos " git add . " para añadir todos los archivos y no uno por uno, en caso de que 
+* git add . :Usamos " git add . " para añadir todos los archivos y no uno por uno, en caso de que 
 hagamos cambios antes de hacer un commit, podemos volver ha hacer git add .
-Cuando hacemos git add . ahora saldra la letra A que significa Archivo agregado al staging area (listo para commit).
+Cuando hacemos git add . ahora saldra la letra A que significa Archivo agregado al staging 
+area (listo para commit).
 
+* git commit -m "proyecto inicial": Con esto se usa para guardar los cambios en el historial del repositorio
+
+* Usamos este codigo donde creamos la conexion con el repositorio remoto en GitHub:
+git remote add origin git@github.com:JanRamirez16/Juego-secreto-segunda-forma.git
+
+* git push -u origin main: donde origin es el nombre del repositorio y main es la rama local,
+entonces subimos todo del git a github, la -u vincula tu rama local con la remota,
+para que después solo necesites: git push 
+
+* git clone https://github.com/JanRamirez16/Juego-secreto-segunda-forma.git, asi de esta forma
+se conecta y clona un repositorio que se guarda en nuestra maquina.
+
+* git log: para ver el historial de commits y para salir con la letra q
+
+* git pull origin main: sirve cuando trbajamos de manera colaborativa, por ejemplo si un compañero realizo un commit y los subio A
+github y nosotros queremos tarerlo lo que hacemos es ejecutar el comando git pull para traer esos cambios a nuestra maquina

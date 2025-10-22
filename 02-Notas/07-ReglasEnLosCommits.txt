@@ -1,0 +1,103 @@
+MENSAJES DE COMMITS----------------------
+
+Aunque no exista una regla universal para redactar mensajes de commit, se pueden seguir 
+algunas buenas prácticas para garantizar que otras personas, e incluso tú en el futuro, 
+entiendan qué cambios se hicieron y por qué.
+
+Los mensajes de los commits deben ser simples y objetivos. A continuación, algunas orientaciones:
+
+* Mantén el mensaje corto y conciso: La primera línea del mensaje debe tener, como máximo, 72 
+caracteres. Si necesitas una descripción adicional, deja una línea en blanco y añade detalles, 
+como el contexto, del cambio realizado.
+
+* Usa verbos en infinitivo: Es común que el mensaje de commit comience con un verbo en infinitivo 
+que describa la modificación realizada, como “agregar”, “corregir” o “actualizar”. Después, añade 
+detalles concisos del cambio. Por ejemplo: “Actualizar el texto del título de la página”.
+
+* Evita detalles técnicos: No incluyas detalles técnicos complejos en el mensaje del commit. Esos 
+detalles pueden añadirse en comentarios del código o en la documentación.
+
+
+Es importante tener en cuenta que el mensaje del commit es una forma de documentar el historial 
+de cambios en el código. La persona que lea ese mensaje puede no conocer el contexto original. 
+Por ello, asegúrate de que tus mensajes de commit sean claros y suficientemente descriptivos.
+
+
+
+¿CUANDO REALIZAR UN COMMIT?---------------------
+
+Un commit debe realizarse siempre que finalices una tarea específica o soluciones algún bug. Esto mantiene el 
+historial de commits claro y rastreable, de modo que sea posible entender qué se hizo en cada commit.
+
+Así, es importante hacer commits con frecuencia. Sin embargo, evita realizar commits demasiado pequeños o demasiado 
+grandes, pues eso puede dificultar su comprensión.
+
+Recuerda no hacer commit de código que sabes que contiene bugs. Lo ideal es que el commit contenga solo código funcional.
+
+
+COMO GIT CONTROLA LOS CAMBIOS-------------------
+
+El control de cambios de Git se realiza a través de los commits. Cada commit almacena el estado completo del proyecto en un 
+momento determinado mediante una instantánea (snapshot). Es decir, cada commit es un registro completo del repositorio en el 
+momento en que se creó ese commit.
+
+Como cada commit es una representación completa y consistente del estado del proyecto en un punto específico en el tiempo, esto facilita 
+la trazabilidad y la comprensión de cómo evolucionó el código a lo largo del tiempo.
+
+Cada commit cuenta con un id único y trae una referencia a los commits anteriores. Así, a través de esta cadena de commits, Git registra 
+un historial completo de todos los commits realizados en el repositorio.
+
+Si quieres conocer mejor este proceso, consulta la documentación oficial de Git.
+
+
+
+AGREGAR MAS DE UN COLABORADOR EN LOS COMMIT------------------
+
+Cada commit tiene por defecto un autor, que es la persona que realizó esos cambios en el código.
+
+Sin embargo, cuando trabajamos en equipo puede ocurrir que algún tramo de código sea escrito en pareja o en grupo. Entonces, 
+¿cómo definir la autoría de esas otras personas en el commit?
+
+Git ofrece la posibilidad de añadir más de un autor a un commit. Para ello, después de escribir el mensaje del commit, 
+dejamos dos líneas en blanco y usamos la palabra clave Co-authored-by:, seguida del nombre y el correo electrónico asociado a
+GitHub (entre < >) de cada persona colaboradora.
+
+Cada coautor debe estar en una línea diferente, como se muestra en el siguiente ejemplo:
+
+
+$ git commit -m "Adicionar nova funcionalidade. 
+
+> 
+
+> 
+
+Co-authored-by: NOMBRE <nombre@email.com> 
+
+Co-authored-by: OTRO-NOMBRE <otro@email.com>" 
+
+Si quieres entender más sobre la coautoría en GitHub, puedes acceder a la documentación referente al tema
+https://docs.github.com/es/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/creating-a-commit-with-multiple-authors
+
+
+COLABORAR EN LOS OPEN SOURCE-------------------
+Existen diversos proyectos de software con su código fuente disponible en GitHub y abiertos a la colaboración de cualquiera que quiera 
+contribuir. Este modelo de desarrollo se llama Open Source o Código Abierto.
+
+Si quieres entender más sobre proyectos Open Source, tenemos aquí en Alura el artículo Open Source - Una breve introducción, que 
+habla más sobre el tema.
+
+En un proyecto que sigue el modelo Open Source, las demandas, como nuevas funcionalidades y corrección de bugs, se describen y listan 
+en el repositorio de GitHub mediante issues. Así, si deseas colaborar, puedes elegir una issue.
+
+Necesitarás realizar un fork del proyecto, que es una copia del repositorio en tu cuenta. De este modo, podrás escribir el código que 
+soluciona la issue elegida.
+
+Por último, para enviar tu solución de vuelta al repositorio fuente, necesitarás abrir un pull request, que es una solicitud de “pull” de 
+tus cambios. Ese pull request pasará por un proceso de evaluación de los responsables del proyecto, pudiendo ser aceptado o no.
+
+Si es aceptado, tu código pasará a formar parte del código fuente de ese proyecto.
+
+Es importante prestar atención siempre a las reglas de contribución de cada repositorio, que pueden variar según el proyecto.
+
+Grandes proyectos son Open Source y se encuentran en GitHub, como la IDE VS Code y el framework React, de JavaScript. Puedes consultar 
+los repositorios de estos proyectos en los siguientes enlaces:

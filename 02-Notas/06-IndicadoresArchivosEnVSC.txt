@@ -1,0 +1,10 @@
+¿Pero qué significa esto?
+
+M: La letra M representa el estado Modified (modificado). Esto significa que el archivo ya 
+existía en el repositorio, pero recibió alguna modificación que aún no ha sido registrada en Git.
+
+U: La letra U representa el estado Untracked (no rastreado). Esto significa que el archivo aún 
+no existía en el repositorio y que todavía no se ha registrado (commit) en Git.
+
+Este indicador nos ayuda a entender el estado actual de nuestros archivos del proyecto en el 
+control de versiones con Git.
